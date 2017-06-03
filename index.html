@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>TheBinarys.com - Thomas Stavnager</title>
+
+		<!-- Bootstrap -->
+		<link href="/css/bootstrap.min.css" rel="stylesheet" />
+		<style type="text/css">
+		.col-centered{
+			float: none;
+			margin: 0 auto;
+		}
+		</style>
+		<script type="text/javascript">
+			window.addEventListener("load", DecodeEmails, false);
+			function DecodeEmails(){
+				var gmail = document.getElementById("gmail");
+				var att = document.createAttribute("href");
+				gmail.innerHTML = atob("dGhvbWFzLm1paWdAZ21haWwuY29t");
+				att.value = "mailto:" + gmail.innerHTML;
+				gmail.setAttributeNode(att);
+
+				var protonmail = document.getElementById("protonmail");
+				var attproton = document.createAttribute("href");
+				protonmail.innerHTML = atob("dGhvbWFzLmhpZ2hiaXRAcHJvdG9ubWFpbC5jb20=");
+				attproton.value = "mailto:" + protonmail.innerHTML;
+				protonmail.setAttributeNode(attproton);
+
+				var thebinarysmail = document.getElementById("thebinarys");
+				var attthebinarys = document.createAttribute("href");
+				thebinarysmail.innerHTML = atob("dGhvbWFzQHRoZWJpbmFyeXMuY29t");
+				attthebinarys.value = "mailto:" + thebinarysmail.innerHTML;
+				thebinarysmail.setAttributeNode(attthebinarys);
+
+			}
+		</script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<![endif]-->
+	</head>
+	<body onload="DecodeEmails">
+		<div class ="col-centered clearfix" style="vertical-align:middle; margin-left: auto; margin-right: auto; width: 650px;">
+			<h2>Thomas Stavnager</h2>
+			<p>I'm a mostly self taught programmer, with Asperger syndrome. I live in Denmark.</p>
+			<noscript>Javascript is required for e-mails to work</noscript>
+			<address>
+				E-mail: <a id="gmail" class="email">gmail</a><br/>
+				E-mail 2: <a id="thebinarys" class="email">gmail</a><br/>
+				E-mail (ProtonMail): <a id="protonmail" class="email">protonmail</a> (<a href="/publickey.protonmail.com.txt">GPG Public Key for ProtonMail address</a>)<br/>
+			</address>
+			<p>To e-mail me securely use either protonmail with the GPG key specific to my protonmail or if you to use one of the other, I'm chech my gmail most, you can you my GPG key from <a href="https://keybase.io/highbit">My Keybase</a></p>
+			<p style="font-weight: bold;">Other links/profiles</p>
+			<ul style="list-style-type:none;">
+				<li><a href="https://twitter.com/thomas_highbit">My Twitter</a></li>
+				<li><a href="https://keybase.io/highbit">My Keybase</a></li>
+				<li><a href="https://github.com/thom6258">My Github</a></li>
+			</ul>
+		</div>
+		<footer class="footer" style="position:fixed;bottom:0; width:100%; text-align:center;"><div class="container">
+			Hosted by: <a href="https://pages.github.com/">Github Pages</a>
+		</div></footer>
+	</body>
+</html>
