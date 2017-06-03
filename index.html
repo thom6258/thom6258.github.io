@@ -16,6 +16,12 @@
 		}
 		</style>
 		<script type="text/javascript">
+			var loc = window.location.href;
+			if (loc.indexOf('http://') == 0)
+			{
+				window.location.href = loc.replace('http://','https://');
+			}
+
 			window.addEventListener("load", DecodeEmails, false);
 			function DecodeEmails(){
 				var gmail = document.getElementById("gmail");
